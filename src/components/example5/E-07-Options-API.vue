@@ -17,7 +17,8 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'User Information'
+      default: 'User Information',
+      required: true
     }
   },
 

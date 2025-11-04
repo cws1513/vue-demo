@@ -1,4 +1,3 @@
-<!-- ChildComponent.vue -->
 <template>
   <h3> Child 1 </h3>
   <div>
@@ -11,13 +10,11 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { inject } from 'vue'
 import ChildComponent2 from "@/components/example4/ChildComponent2.vue";
 
-export default {
-  components: {ChildComponent2},
-  inject: ['sharedMessage']
-};
+const sharedMessage = inject('sharedMessage')
 </script>
 
 
